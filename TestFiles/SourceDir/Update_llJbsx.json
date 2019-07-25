@@ -1,0 +1,11 @@
+{
+	"sql_operator":2,
+	"table_name":"nz_ll_jbsx",
+	"set_fields":{
+		"fx":1,
+		"slsj":888888888888001	
+	},
+	"where_fields":{
+		"dxbm":"llqg001"
+	}
+}

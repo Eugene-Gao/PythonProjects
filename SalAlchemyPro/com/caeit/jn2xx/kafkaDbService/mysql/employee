@@ -1,0 +1,6 @@
+insert into employee ( first_name, last_name, bir, age, sex, income ) values ( 'minhe', 'gao', '2015-02-01 19:30:00', 3, 'M', 40000.75 );
+
+selectOne * from employee;
+
+update employee set income = 50000.55 where first_name = 'minhe' and last_name = 'gao';
+

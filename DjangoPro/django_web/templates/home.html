@@ -1,0 +1,24 @@
+{% extends 'baseTemplate.html' %}
+ 
+{% block title %}欢迎光临首页{% endblock %}
+ 
+{% block content %}
+{#{% include 'ad.html' %}#}
+    <p>这里是首页，欢迎光临</p>
+    {% url 'add2' 4 5 as the_url %}
+    <a href="{{ the_url}}">连接到: {{ the_url}}</a>
+{#    for 循环 List#}
+    <p>教程列表：</p>
+    {% for i in tutorial_list %}
+    {{ i }}
+    {% endfor %}
+{#    for 循环 Dict#}
+    {% for key, value in info_dict.items %}
+        {{ key }}: {{ value }}
+    {% endfor %}
+{#    for 循环 List#}
+    {% for item in info_list %}
+        {{ item }}
+        {% if not forloop.last %},{% endif %}
+    {% endfor %}
+{% endblock %}

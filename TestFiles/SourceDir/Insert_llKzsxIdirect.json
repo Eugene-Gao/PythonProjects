@@ -1,0 +1,11 @@
+{
+	"sql_operator": 1,
+	"table_name":"nz_ll_kzsx_idirect",
+	"insert_fields": {
+		"dxbm":"llqg002",
+		"tlqssj": 12345567,
+		"wtmc": "5G001",
+		"txsblx": 1,
+		"wxmc": "test"
+	}
+}

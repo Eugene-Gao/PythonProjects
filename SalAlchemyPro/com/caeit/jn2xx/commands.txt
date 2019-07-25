@@ -1,0 +1,6 @@
+
+1.利用flask-sqlacodegen快速导入ORM表结构
+flask-sqlacodegen --outfile models.py  --flask mysql+pymysql://root:123456@192.168.162.10/nz_wltsfx
+
+2.利用sqlacodegen快速导入ORM表结构
+sqlacodegen mssql+pymssql://name:password@ip/LogColudDB --outfile logcloude_model.py

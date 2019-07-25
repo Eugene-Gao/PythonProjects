@@ -1,0 +1,12 @@
+{
+	"sql_operator": 1,
+	"table_name":"nz_sb_jbsx",
+	"insert_fields": {
+		"dxbm":"sbqg002",
+		"sbmc": "设备002",
+		"sblx": 2,
+		"jbxx": "设备002基本信息",
+		"kszt": 3,
+		"scck": "素材仓库：设备002"
+	}
+}
