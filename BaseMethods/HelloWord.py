@@ -1,4 +1,5 @@
-# encoding=UTF-8
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 # **** 数据类型
 # 1. 没有单独的 long 类型。 int 类型可以指任何大小的整数。
 print("Welcome to Python 3.x")
@@ -47,10 +48,12 @@ else:
 shoplist = ['apple', 'mango', 'carrot', 'banana']
 for fruit in shoplist:
     print('Hello,{fruit}!'.format(fruit=fruit))
-# 2. tuple的一大特征类似于字符串， 它们是不可变的。
+# 2. tuple的一大特征类似于字符串， 它们是不可变的（ Immutable）。
+#   如果可能，能用 tuple 代替 list 就尽量用 tuple。
 #   定义一个空的 tuple
 varTuple = ()
-#   单一元素的元组，不能写为 singleton = (2)
+print(len(varTuple))
+#   单一元素的元组，不能写为 singleton = (2)，定义的不是 tuple，是 1 这个数！
 #   只有 1 个元素的 tuple 定义时必须加一个逗号,，来消除歧义
 singleton = (2,)
 zoo = ('python', 'elephant', 'penguin')
@@ -74,12 +77,13 @@ ab = {
 print("Whether Eugene is in the address book: ", 'Eugene' in ab)
 #   获取key对应的value的2种方式
 print("Swaroop's address is", ab['Swaroop'])
+# 通过 dict 提供的 get 方法，如果 key 不存在，可以返回 None，或者自己指定的 value
 print("Swaroop's address is", ab.get('Eugene', 'None'))
 #   删除一对键值—值配对的2种方式
 del ab['Spammer']
 ab.pop('Matsumoto')
 print('\nThere are {} contacts in the address-book\n'.format(len(ab)))
-#   创建一个 dict 对象
+#   创建一个 dict 对象的5种方式
 a = dict(one=1, two=2, three=3)
 b = {'one': 1, 'two': 2, 'three': 3}
 c = dict(zip(['one', 'two', 'three'], [1, 2, 3]))
@@ -105,7 +109,7 @@ reflist = shoplist
 del shoplist[0]
 print('shoplist is', shoplist)
 print('reflist is', reflist)
-# 通过生成一份完整的切片制作一份列表的副本，二者指向不同存储单元
+# 通过生成一份完整的切片制作一份列表的副本，【二者指向不同存储单元】
 copylist = shoplist[:]
 del copylist[0]
 print('shoplist is', shoplist)
@@ -329,13 +333,10 @@ for n in o_generator:
 # **** map函数
 def f(x):
     return x * x
-
-
 print(list(map(f, [1, 2, 3, 4, 5, 6, 7, 8, 9])))
 
 # **** reduce函数
 from functools import reduce
-
 CHAR_TO_INT = {
     '0': 0,
     '1': 1,
@@ -348,7 +349,6 @@ CHAR_TO_INT = {
     '8': 8,
     '9': 9
 }
-
 
 def str2int(s):
     ints = map(lambda ch: CHAR_TO_INT[ch], s)
@@ -372,7 +372,6 @@ CHAR_TO_FLOAT = {
     '9': 9,
     '.': -1
 }
-
 
 def str2float(s):
     nums = map(lambda ch: CHAR_TO_FLOAT[ch], s)
