@@ -36,9 +36,9 @@ def log(logger_name, logger_level, log_filepath):
     return logger
 
 if __name__ == '__main__':
-    logger_name = "logutil"
+    logger_name = "edgeX"
     logger_level = logging.DEBUG
-    log_filepath = "D:/Work/Project/LogFiles/" + logger_name + "_log_" + datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+    log_filepath = "C:/Users/xitqa/PythonProjects/edgexDemo/" + logger_name + "_log_" + datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
     logConfig_dict = {
         "logger_name": logger_name,
         "logger_level": logger_level,

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+import json
 import os
 import pathlib
 import sys
@@ -65,10 +66,9 @@ class wrfile:
         if os.path.exists(self.file):  # 如果文件存在
             # 删除文件，可使用以下两种方法。
             os.remove(self.file)
-            print("删除成功")
+            return True
         # os.unlink(path)
-        else:
-            print('no such file:%s' % self.file)  # 则返回文件不存在
+
 
     # 文件写入
     def write_file(self):
@@ -92,35 +92,59 @@ class wrfile:
             return data
 
     # 文件一行一行读取
-    def rdplus_file(self):
-        with open(self.file, 'r') as f:
-            for eachline in f:
-                print(eachline)
+    def rdTopBottom_file(self):
+        with open(self.file, 'r', encoding='utf-8') as f:  # 打开文件
+            lines = f.readlines()  # 读取所有行
+            first_line = lines[0]  # 取第一行
+            last_line = lines[-1]  # 取最后一行
+            return first_line, last_line
 
     # 重新命名
     def rename_file(self, newName):
-        newName = input("加入新名字")
         os.rename(self.file, newName)
 
-    # 编辑，在文字最后编辑
+    # appending the new line on the bottom of the file
     def wrpuls_file(self, nr):
         with open(file=self.file, mode='a', buffering=-1) as f:
-            f.write(nr)
+            f.write(nr + "\n")
+        return True
         # print("成功")
 
 
 if __name__ == '__main__':
-    file_name = "querystr.txt"
-    # if the file already exits, then delete the file firstly
-    path = pathlib.Path(file_name)
-    if path.exist() and path.is_file():
-        os.remove(file_name)
+
+    # wt_file_name = "C:/Users/xitqa/PythonProjects/edgexDemo/querystr-1.json"
+    # wt_file = wrfile(wt_file_name)
+    # # if the file already exits, then delete the file firstly
+    # wt_file.del_file()
+    # # path = pathlib.Path(wt_file_name)
+    # # if path.is_file():
+    # #     os.remove(wt_file_name)
+    #
+    # file_name = "C:/Users/xitqa/PythonProjects/edgexDemo/querystr.txt"
+    # # create a new file with the same name
+    # info_file1 = infoFile(file_name)
+    # # check file status
+    # print(info_file1.get_file_status())#写入调用方法
+    #
+    # querystr = wrfile(file_name)
+    # # read an exist file
+    # querystr_content = querystr.rd_file()
+    # print(querystr_content)
+    #
+    # # write a new file
+    # wrpuls_file_rlt = wt_file.wrpuls_file(querystr_content)
+    # print(wrpuls_file_rlt)
 
 
-    # create a new file with the same name
-    file1 = infoFile(file_name)
-    # check file status
-    print(file1.get_file_status())#写入调用方法
-    file2 = wrfile(file_name)
-    # read the current file
-    print(file2.wrpuls_file())
+    rd_file_name = "C:/Users/xitqa/PythonProjects/edgexDemo/mqttMsg-1.json"
+    mqttMsg = wrfile(rd_file_name)
+    first_line, last_line = mqttMsg.rdTopBottom_file()
+    print('文件' + rd_file_name + '第一行为：' + first_line)
+    print('文件' + rd_file_name + '最后一行为：' + last_line)
+
+    # 将 JSON 对象转换为 Python 字典
+    first_line_dict = json.loads(first_line)
+    print(type(first_line_dict))
+    print(type(first_line_dict["readings"]))
+

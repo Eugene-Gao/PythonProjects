@@ -19,18 +19,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="41fe6996-d26e-4494-8113-52fc31147d09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edgexDemo/fileManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edgexDemo/httpActions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edgexDemo/httpServices.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edgexDemo/mqttClient.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/edgexDemo/querystr.txt" afterDir="false" />
+    <list default="true" id="41fe6996-d26e-4494-8113-52fc31147d09" name="Default Changelist" comment="20200911-edegx">
+      <change afterPath="$PROJECT_DIR$/edgexDemo/config/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/edgexDemo/config/configParam.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/PythonProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProjects.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/fileUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/fileUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/log/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log/logUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/log/logUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/datatypeUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/fileUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/fileUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/ftpUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/ftpUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/regexUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/regexUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/validationUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/validationUtil.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edgexDemo/fileManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/fileManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edgexDemo/mqttClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/edgexDemo/mqttClient.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +68,37 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\xitqa\PythonProjects\BaseMethods\utils" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\xitqa\PythonProjects\edgexDemo" />
+      <recent name="C:\Users\xitqa\PythonProjects\BaseMethods" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.mqttClient">
+  <component name="RunManager" selected="Python.fileManager (1)">
+    <configuration name="fileManager (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BaseMethods/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseMethods/utils/fileManager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="fileManager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +112,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/edgexDemo/fileManager.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\xitqa\PythonProjects\BaseMethods\utils\fileManager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fileUtil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils/fileUtil.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="logUtil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PythonProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log/logUtil.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,33 +187,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="student" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PythonProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/BaseMethods" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BaseMethods/student.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fileManager (1)" />
         <item itemvalue="Python.mqttClient" />
+        <item itemvalue="Python.fileUtil" />
+        <item itemvalue="Python.logUtil" />
         <item itemvalue="Python.fileManager" />
-        <item itemvalue="Python.student" />
       </list>
     </recent_temporary>
   </component>
@@ -154,8 +207,16 @@
       <updated>1599671862691</updated>
       <workItem from="1599671871141" duration="840000" />
       <workItem from="1599718287910" duration="9732000" />
-      <workItem from="1599789450023" duration="5096000" />
+      <workItem from="1599789450023" duration="22347000" />
     </task>
+    <task id="LOCAL-00001" summary="20200911-edegx">
+      <created>1599807309573</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599807309573</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,32 +239,58 @@
       <path value="$PROJECT_DIR$/learn-python3" />
       <path value="$PROJECT_DIR$/python-evtx" />
     </ignored-roots>
+    <MESSAGE value="20200911-edegx" />
+    <option name="LAST_COMMIT_MESSAGE" value="20200911-edegx" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599815309760">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="174" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599815309760" />
     <state x="779" y="210" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1599672167899">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="779" y="210" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599672167899" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1599793851181">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom" timestamp="1599829621387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599793851181" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1599793851181">
+    <state width="1877" height="314" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599829621387" />
+    <state width="1877" height="314" key="GridCell.Tab.0.center" timestamp="1599829621387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599793851181" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1599793851180">
+    <state width="1877" height="314" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599829621387" />
+    <state width="1877" height="314" key="GridCell.Tab.0.left" timestamp="1599829621387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599793851180" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1599793851181">
+    <state width="1877" height="314" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599829621387" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right" timestamp="1599829621387">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599793851181" />
+    <state width="1877" height="314" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599829621387" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1599828968913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1599828968913" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1599828968912">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1599828968912" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1599828968912">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1599828968912" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1599828968913">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="348" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1599828968913" />
     <state x="16" y="121" key="SettingsEditor" timestamp="1599720461563">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="16" y="121" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1599720461563" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1599807316728">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1599807316728" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -217,8 +304,11 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/PythonProjects$fileManager__1_.coverage" NAME="fileManager (1) Coverage Results" MODIFIED="1599829621367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods/utils" />
     <SUITE FILE_PATH="coverage/PythonProjects$student.coverage" NAME="student Coverage Results" MODIFIED="1599672403074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods" />
-    <SUITE FILE_PATH="coverage/PythonProjects$mqttClient.coverage" NAME="mqttClient Coverage Results" MODIFIED="1599793188605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
+    <SUITE FILE_PATH="coverage/PythonProjects$fileUtil.coverage" NAME="fileUtil Coverage Results" MODIFIED="1599808663160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils" />
+    <SUITE FILE_PATH="coverage/PythonProjects$logUtil.coverage" NAME="logUtil Coverage Results" MODIFIED="1599807694234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log" />
+    <SUITE FILE_PATH="coverage/PythonProjects$mqttClient.coverage" NAME="mqttClient Coverage Results" MODIFIED="1599818778417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
     <SUITE FILE_PATH="coverage/PythonProjects$fileManager.coverage" NAME="fileManager Coverage Results" MODIFIED="1599733659986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
   </component>
 </project>

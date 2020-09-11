@@ -25,12 +25,12 @@ def resolve_json(file_name):
 
 
 if __name__ == '__main__':
-    logger_name = "fileutil"
+    logger_name = "Delete_llJbsx"
     logger_level = logging.DEBUG
-    log_filepath = "D:/Work/Project/LogFiles/" + logger_name + "_log_" + datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
+    log_filepath = "C:/Users/xitqa/PythonProjects/edgexDemo/" + logger_name + "_log_" + datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
     logger = log(logger_name, logger_level, log_filepath)
 
-    file_name = "D:/Work/Project/SalAlchemyPro/jsonFile.json"
+    file_name = "C:/Users/xitqa/PythonProjects/TestFiles/SourceDir/Delete_llJbsx.json"
     json_orderdict = resolve_json(file_name)
     print(json_orderdict)
     logger.debug(json_orderdict)
