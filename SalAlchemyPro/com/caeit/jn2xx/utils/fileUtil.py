@@ -12,7 +12,7 @@ from com.caeit.jn2xx.log.logUtil import log
 def resolve_json(file_name):
     """
     :param file_name: absolute utils path
-    :return: jscon content
+    :return: json content
     :rtype: collections.OrderedDict()
     """
     json_orderdict = collections.OrderedDict()

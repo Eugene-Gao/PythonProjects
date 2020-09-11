@@ -1,0 +1,29 @@
+[
+    {
+        "id": "3c04c23b-1d9f-4f65-ab1a-f28165cfcd1a",
+        "created": 1598802339006,
+        "modified": 1598802339006,
+        "origin": 0,
+        "name": "QuickStartExport",
+        "addressable": {
+            "id": "29a06247-c6b1-4cab-b658-365cf73cde12",
+            "name": "EMQBroker",
+            "protocol": "tcp",
+            "address": "192.168.200.64",
+            "port": 1883,
+            "publisher": "EdgeXExportPublisher",
+            "topic": "Edgex-test1",
+            "baseURL": "tcp://192.168.200.64:1883",
+            "url": "tcp://192.168.200.64:1883"
+        },
+        "format": "JSON",
+        "filter": {
+            "deviceIdentifiers": [
+                "Random-Integer-Generator01"
+            ]
+        },
+        "encryption": {},
+        "enable": true,
+        "destination": "MQTT_TOPIC"
+    }
+]
