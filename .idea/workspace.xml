@@ -20,15 +20,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41fe6996-d26e-4494-8113-52fc31147d09" name="Default Changelist" comment="20200911-edegx">
-      <change afterPath="$PROJECT_DIR$/edgexDemo/schedular.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/PythonProjects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PythonProjects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py" beforeDir="false" afterPath="$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/edgexDemo/httpActions.py" beforeDir="false" afterPath="$PROJECT_DIR$/edgexDemo/httpActions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edgexDemo/config/configParam.py" beforeDir="false" afterPath="$PROJECT_DIR$/edgexDemo/config/configParam.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/edgexDemo/mqttClient.py" beforeDir="false" afterPath="$PROJECT_DIR$/edgexDemo/mqttClient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/learn-python3" beforeDir="false" afterPath="$PROJECT_DIR$/learn-python3" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edgexDemo/config/configParam.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="40" column="28" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/edgexDemo/mqttClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="e#47#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="218">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -40,10 +78,66 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/edgexDemo/config/configParam.py" />
+        <option value="$PROJECT_DIR$/edgexDemo/mqttClient.py" />
+        <option value="$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py" />
+      </list>
+    </option>
+  </component>
   <component name="JupyterTrust" id="d01918ba-50ba-47bd-96ba-e99c8141ad7d" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="185" />
+    <option name="y" value="175" />
+    <option name="width" value="1440" />
+    <option name="height" value="755" />
+  </component>
   <component name="ProjectId" id="1hHdF2JVLVSnsJGBUGIuCeOGMd4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="BaseMethods" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="BaseMethods" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="edgexDemo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjects" type="462c0819:PsiDirectoryNode" />
+              <item name="edgexDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -55,7 +149,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/edgexDemo" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,7 +160,19 @@
       <recent name="C:\Users\xitqa\PythonProjects\BaseMethods" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.schedular">
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.mqttClient">
     <configuration name="datatypeUtil" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PythonProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,15 +314,18 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.schedular" />
-        <item itemvalue="Python.datatypeUtil" />
-        <item itemvalue="Python.fileManager" />
         <item itemvalue="Python.mqttClient" />
+        <item itemvalue="Python.datatypeUtil" />
+        <item itemvalue="Python.schedular" />
+        <item itemvalue="Python.fileManager" />
         <item itemvalue="Python.fileUtil" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="41fe6996-d26e-4494-8113-52fc31147d09" name="Default Changelist" comment="" />
@@ -229,6 +338,8 @@
       <workItem from="1599789450023" duration="23239000" />
       <workItem from="1599878467223" duration="8276000" />
       <workItem from="1599977457485" duration="3787000" />
+      <workItem from="1599991767226" duration="4140000" />
+      <workItem from="1600001475248" duration="4605000" />
     </task>
     <task id="LOCAL-00001" summary="20200911-edegx">
       <created>1599807309573</created>
@@ -247,20 +358,69 @@
     <option name="localTasksCounter" value="3" />
     <servers />
   </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8745000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="818" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533512" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32944608" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32944608" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -332,13 +492,39 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/PythonProjects$fileManager__1_.coverage" NAME="fileManager (1) Coverage Results" MODIFIED="1599829621367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods/utils" />
-    <SUITE FILE_PATH="coverage/PythonProjects$student.coverage" NAME="student Coverage Results" MODIFIED="1599672403074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods" />
-    <SUITE FILE_PATH="coverage/PythonProjects$fileUtil.coverage" NAME="fileUtil Coverage Results" MODIFIED="1599808663160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils" />
+    <SUITE FILE_PATH="coverage/PythonProjects$datatypeUtil.coverage" NAME="datatypeUtil Coverage Results" MODIFIED="1600005564798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods/utils" />
     <SUITE FILE_PATH="coverage/PythonProjects$logUtil.coverage" NAME="logUtil Coverage Results" MODIFIED="1599807694234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/log" />
-    <SUITE FILE_PATH="coverage/PythonProjects$mqttClient.coverage" NAME="mqttClient Coverage Results" MODIFIED="1599818778417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
-    <SUITE FILE_PATH="coverage/PythonProjects$fileManager.coverage" NAME="fileManager Coverage Results" MODIFIED="1599733659986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
-    <SUITE FILE_PATH="coverage/PythonProjects$datatypeUtil.coverage" NAME="datatypeUtil Coverage Results" MODIFIED="1599886499882" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods/utils" />
     <SUITE FILE_PATH="coverage/PythonProjects$schedular.coverage" NAME="schedular Coverage Results" MODIFIED="1599986430880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
+    <SUITE FILE_PATH="coverage/PythonProjects$student.coverage" NAME="student Coverage Results" MODIFIED="1599672403074" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods" />
+    <SUITE FILE_PATH="coverage/PythonProjects$mqttClient.coverage" NAME="mqttClient Coverage Results" MODIFIED="1600005650903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
+    <SUITE FILE_PATH="coverage/PythonProjects$fileManager.coverage" NAME="fileManager Coverage Results" MODIFIED="1599733659986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/edgexDemo" />
+    <SUITE FILE_PATH="coverage/PythonProjects$fileUtil.coverage" NAME="fileUtil Coverage Results" MODIFIED="1599808663160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SalAlchemyPro/com/caeit/jn2xx/utils" />
+    <SUITE FILE_PATH="coverage/PythonProjects$fileManager__1_.coverage" NAME="fileManager (1) Coverage Results" MODIFIED="1599829621367" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/BaseMethods/utils" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/edgexDemo/config/configParam.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="40" column="28" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edgexDemo/mqttClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="e#47#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BaseMethods/utils/datatypeUtil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
