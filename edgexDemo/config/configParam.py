@@ -37,7 +37,7 @@ class ConfigParameters(object):
         "topic" : "Edgex-test1"
     }
 
-    # Dev mqtt
+    # Edgex mqtt
     mqttConfig_192_168_1_108 = {
         # mqtt IP address
         "strBroker" : "192.168.1.108",
@@ -49,5 +49,14 @@ class ConfigParameters(object):
         "password" : "",
         # 订阅主题名
         "topic" : "randomValue-1"
+    }
+
+    # socketConfig
+    socketConfig_local = {
+        # 设置服务端的ip地址
+        "host": "127.0.0.1",
+        # 设置端口
+        "port": 9999,
+        "msgsize": 2048
     }
 

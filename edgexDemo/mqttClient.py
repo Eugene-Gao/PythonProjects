@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import datetime
-import json
-import sys
-import socket, sys
 import paho.mqtt.client as mqtt
 
 
 # pip3 install paho-mqtt
 
 # 服务器地址
+from communications.socketClient import runSocketClinet
 from config.configParam import ConfigParameters
 from utils.fileManager import wrfile
 
@@ -50,15 +48,21 @@ def on_message(mqttc, obj, msg):
 
 def on_exec(msgPayload):
     # get the message from edgeX of the edge side
-    # msg bytes aretransfered to a string
+    # msgPayload bytes are transferred to a string
     msgPayload_str = msgPayload.decode('utf-8')
     # serializing to a file
     wt_file_name = "C:/pythonFiles/randomValue-1.json"
     # write a new file
     wt_file = wrfile(wt_file_name)
     wrpuls_file_rlt = wt_file.wrpuls_file(msgPayload_str)
-    #TODO: send the msg to LORA
-    print ("Exec:", msgPayload)
+    print ("Exec:", msgPayload_str)
+    # TODO: send the msg to LORA
+    # 创建一个客户端的socket对象
+    socketConfig_local = ConfigParameters().socketConfig_local
+    rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"], socketConfig_local["msgsize"],
+                             msgPayload_str)
+    print(rtnMsg)
+
     # transfer to a dict
     # mqttMsg = json.loads(msgPayload_str)
     # print(isinstance(mqttMsg, dict))
