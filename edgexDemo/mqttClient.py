@@ -53,7 +53,7 @@ def on_exec(msgPayload):
     # msg bytes aretransfered to a string
     msgPayload_str = msgPayload.decode('utf-8')
     # serializing to a file
-    wt_file_name = "C:/Users/xitqa/PythonProjects/edgexDemo/mqttMsg-1.json"
+    wt_file_name = "C:/pythonFiles/randomValue-1.json"
     # write a new file
     wt_file = wrfile(wt_file_name)
     wrpuls_file_rlt = wt_file.wrpuls_file(msgPayload_str)
@@ -76,7 +76,8 @@ if __name__ == '__main__':
     # mqttc.username_pw_set(username, password=password)
 #########################################################################
     # 配置 mqtt 参数
-    mqttconfig_dict = ConfigParameters().mqttConfig_192_168_200_64
+    # mqttconfig_dict = ConfigParameters().mqttConfig_192_168_200_64
+    mqttconfig_dict = ConfigParameters().mqttConfig_192_168_1_108
 #########################################################################
     mqttc.connect(mqttconfig_dict["strBroker"], mqttconfig_dict["port"], 60)
     mqttc.subscribe(mqttconfig_dict["topic"], 0)

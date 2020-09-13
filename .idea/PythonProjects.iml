@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/BaseMethods" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/edgexDemo" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.8 (pythonProject)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.6.2 (D:\Software\Anaconda3\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TemplatesService">

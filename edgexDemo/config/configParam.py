@@ -23,7 +23,7 @@ class ConfigParameters(object):
         "getterTopic": "test3"
     }
 
-    # Dev kafka
+    # Dev mqtt
     mqttConfig_192_168_200_64 = {
         # mqtt IP address
         "strBroker" : "192.168.200.64",
@@ -35,5 +35,19 @@ class ConfigParameters(object):
         "password" : "",
         # 订阅主题名
         "topic" : "Edgex-test1"
+    }
+
+    # Dev mqtt
+    mqttConfig_192_168_1_108 = {
+        # mqtt IP address
+        "strBroker" : "192.168.1.108",
+        # 通信端口
+        "port" : 1883,
+        # 用户名
+        "username" : "",
+        # 密码
+        "password" : "",
+        # 订阅主题名
+        "topic" : "randomValue-1"
     }
 
