@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+
 __author__ = 'Eugene Gao'
 __date__ = '2018.08.10'
 
@@ -6,7 +8,7 @@ import collections
 import logging
 import json
 from datetime import datetime
-from com.caeit.jn2xx.log.logUtil import log
+from log.logUtil import log
 
 
 def resolve_json(file_name):
