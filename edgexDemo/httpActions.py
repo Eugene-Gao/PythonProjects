@@ -8,14 +8,14 @@ import requests
 def get(url):
     res = requests.get(url)
     result = res.text
-    print(result)
+    return result
 
 
 def post(url, querystr):
     data = eval(querystr)
     res = requests.post(url, data=data)
     result = res.text
-    print(result)
+    return result
 
 
 def put(url, querystr):
@@ -26,13 +26,13 @@ def put(url, querystr):
         print(result)
     res = requests.put(url)
     result = res.text
-    print(result)
+    return result
 
 
 def delete(url, querystr):
     res = requests.delete(url)
     result = res.text
-    print(result)
+    return result
 
 if __name__ == "__main__":
     # host=input("host&port:")
@@ -43,8 +43,8 @@ if __name__ == "__main__":
     type = "get"
 
     str = ""
-    with open("querystr.txt") as file:
-        str = file.read().strip()
+    with open("querystr.txt") as f:
+        str = f.read().strip()
 
     if type == "get":
         get(url)
