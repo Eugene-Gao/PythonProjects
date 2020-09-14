@@ -25,6 +25,7 @@ def socketClient(client, host, port, msgsize, sendmsg):
     # 接收服务端返回的数据，需要解码
     return msg.decode("utf-8")
 
+
 def runSocketClinet(host, port, msgsize, sendmsg):
     # 创建一个客户端的socket对象
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -44,7 +45,7 @@ if __name__ == '__main__':
     }
     sendmsg = "连接服务端"
     # 创建一个客户端的socket对象
-    rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"],
-                             socketConfig_local["msgsize"], sendmsg)
-    print(rtnMsg)
+    # rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"],
+    #                          socketConfig_local["msgsize"], sendmsg)
+    # print(rtnMsg)
 

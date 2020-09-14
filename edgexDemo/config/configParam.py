@@ -61,6 +61,14 @@ class ConfigParameters(object):
         "msgsize": 2048
     }
 
+    socketConfig_edgeSide = {
+        # 设置服务端的ip地址
+        "host": "192.168.1.103",
+        # 设置端口
+        "port": 9999,
+        "msgsize": 2048
+    }
+
     # socketConfig
     thresholdValue_enums = {
         "tempThreshold": 0,

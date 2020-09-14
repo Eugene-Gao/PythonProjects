@@ -60,21 +60,28 @@ def on_exec(msgPayload):
     # add the alert flag
     wrap_mqttMsg_str = wrap_mqttMsg(msgPayload_str)
     print("Exec:", wrap_mqttMsg_str)
+    socketConfig_edgeSide = ConfigParameters().socketConfig_edgeSide
+    rtnEdgeSideMsg = runSocketClinet(socketConfig_edgeSide["host"], socketConfig_edgeSide["port"], socketConfig_edgeSide["msgsize"],
+                             wrap_mqttMsg_str)
+
+    if len(rtnEdgeSideMsg) == 0 and rtnEdgeSideMsg.isspace():
+        print(rtnEdgeSideMsg)
     # gzip+base64压缩
     wrap_mqttMsg_str = str(gzip_zip(wrap_mqttMsg_str))
     # TODO: send the msg to LORA
     # 创建一个客户端的socket对象
     socketConfig_local = ConfigParameters().socketConfig_local
-    rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"], socketConfig_local["msgsize"],
+    rtnCloudSideMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"], socketConfig_local["msgsize"],
                              wrap_mqttMsg_str)
-    print(rtnMsg)
+    print(rtnCloudSideMsg)
+
 
 def wrap_mqttMsg(mqttMsg):
-    '''
+    """
     adding the mqtt msg with alert flag, then send it to Edgex on the cloud side
     :param mqttMsg:
     :return: wrapmsg
-    '''
+    """
 
     if len(mqttMsg) == 0 and mqttMsg.isspace():
         wrapMsg = ""
@@ -91,6 +98,7 @@ def wrap_mqttMsg(mqttMsg):
         wrapMsg = json.dumps(wrapDict)
     # return value
     return wrapMsg
+
 
 # =====================================================
 if __name__ == '__main__':

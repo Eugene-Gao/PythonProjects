@@ -31,6 +31,7 @@ def socketServer(socketserver, host, port, msgsize, sendmsg):
         # 对要发送的数据进行编码
         clientsocket.send(sendmsg.encode("utf-8"))
 
+
 if __name__ == '__main__':
     socketConfig_local = {
         # 设置服务端的ip地址
