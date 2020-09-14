@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import datetime
+import json
+
 import paho.mqtt.client as mqtt
 
 
@@ -9,6 +11,7 @@ import paho.mqtt.client as mqtt
 # 服务器地址
 from communications.socketClient import runSocketClinet
 from config.configParam import ConfigParameters
+from dataCompress.gzipBase64Compress import gzip_zip
 from utils.fileManager import wrfile
 
 # strBroker = "192.168.200.64"
@@ -50,22 +53,44 @@ def on_exec(msgPayload):
     # get the message from edgeX of the edge side
     # msgPayload bytes are transferred to a string
     msgPayload_str = msgPayload.decode('utf-8')
-    # serializing to a file
+    # serialize to a file
     wt_file_name = "C:/pythonFiles/randomValue-1.json"
-    # write a new file
-    wt_file = wrfile(wt_file_name)
-    wrpuls_file_rlt = wt_file.wrpuls_file(msgPayload_str)
-    print ("Exec:", msgPayload_str)
+    # appending a file
+    wrpuls_file_rlt = wrfile(wt_file_name).wrpuls_file(msgPayload_str)
+    # add the alert flag
+    wrap_mqttMsg_str = wrap_mqttMsg(msgPayload_str)
+    print("Exec:", wrap_mqttMsg_str)
+    # gzip+base64压缩
+    wrap_mqttMsg_str = str(gzip_zip(wrap_mqttMsg_str))
     # TODO: send the msg to LORA
     # 创建一个客户端的socket对象
     socketConfig_local = ConfigParameters().socketConfig_local
     rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"], socketConfig_local["msgsize"],
-                             msgPayload_str)
+                             wrap_mqttMsg_str)
     print(rtnMsg)
 
-    # transfer to a dict
-    # mqttMsg = json.loads(msgPayload_str)
-    # print(isinstance(mqttMsg, dict))
+def wrap_mqttMsg(mqttMsg):
+    '''
+    adding the mqtt msg with alert flag, then send it to Edgex on the cloud side
+    :param mqttMsg:
+    :return: wrapmsg
+    '''
+
+    if len(mqttMsg) == 0 and mqttMsg.isspace():
+        wrapMsg = ""
+    else:
+        # get reading
+        mqttDict = json.loads(mqttMsg)
+        readingsDict = mqttDict.get('readings', '')[0]
+        print(readingsDict["value"])
+        if float(readingsDict["value"]) >= ConfigParameters.thresholdValue_enums["tempThreshold"]:
+            # The temp exceeds the threshold, set the alter value
+            wrapDict = dict(mqttDict, **{"alterFlag" : "1001"})
+        else:
+            wrapDict = dict(mqttDict, **{"alterFlag": "1000"})
+        wrapMsg = json.dumps(wrapDict)
+    # return value
+    return wrapMsg
 
 # =====================================================
 if __name__ == '__main__':

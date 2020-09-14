@@ -98,7 +98,8 @@ s_set.add('Water lemon')
 #   删除元素
 s_set.remove('Water lemon')
 #   两个set可以做数学意义上的交集、并集等操作
-s1 = set([1, 1, 2, 2, 3, 3])
+# s1 = set([1, 1, 2, 2, 3, 3])
+s1 = [1, 1, 2, 2, 3, 3]
 print(s1)
 s2 = set([2, 3, 4])
 print(s1 & s2)

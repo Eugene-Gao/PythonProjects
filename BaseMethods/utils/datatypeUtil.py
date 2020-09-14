@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import json
+from functools import reduce
 
 __author__ = 'Eugene Gao'
 __date__ = '2018.08.13'
@@ -55,8 +56,8 @@ if __name__ == '__main__':
     # print(str2Hex_slt_str)
     # hex2Str_slt_str = hex2Str(str2Hex_slt_str)
     # print(hex2Str_slt_str)
-
     jl = r'[{"name": "a", "email": "a@gmail.com"},{"name": "b", "email": "b@gmail.com"}]'
     print(type(jsonList2DictList(jl)))
     for do in jsonList2DictList(jl):
         print([k + '=' + v for k, v in do.items()])
+

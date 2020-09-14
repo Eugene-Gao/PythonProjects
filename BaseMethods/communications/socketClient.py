@@ -44,7 +44,7 @@ if __name__ == '__main__':
     }
     sendmsg = "连接服务端"
     # 创建一个客户端的socket对象
-    rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"], socketConfig_local["msgsize"],
-                          sendmsg)
+    rtnMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"],
+                             socketConfig_local["msgsize"], sendmsg)
     print(rtnMsg)
 
