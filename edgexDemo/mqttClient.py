@@ -40,7 +40,8 @@ def on_subscribe(mqttc, obj, mid, granted_qos):
 
 
 def on_log(mqttc, obj, level, string):
-    print("Log:" + string)
+    # print("Log:" + string)
+    pass
 
 
 def on_message(mqttc, obj, msg):
@@ -60,16 +61,17 @@ def on_exec(msgPayload):
     # wrpuls_file_rlt = wrfile(wt_file_name).wrpuls_file(msgPayload_str)
     # 增加报警标识符
     wrap_mqttMsg_str = wrap_mqttMsg(msgPayload_str)
-    print("Exec:", wrap_mqttMsg_str)
+    # print("发送云端数据: ", wrap_mqttMsg_str)
     # 向物联设备发送指令
     socketConfig_edgeSide = ConfigParameters().socketConfig_edgeSide
     rtnEdgeSideMsg = runSocketClinet(socketConfig_edgeSide["host"], socketConfig_edgeSide["port"],
                                      socketConfig_edgeSide["msgsize"], wrap_mqttMsg_str)
 
-    if len(rtnEdgeSideMsg) != 0 and rtnEdgeSideMsg.isspace() is False:
-        print("rtnEdgeSideMsg: ", rtnEdgeSideMsg)
+    # if len(rtnEdgeSideMsg) != 0 and rtnEdgeSideMsg.isspace() is False:
+    #     print("rtnEdgeSideMsg: ", rtnEdgeSideMsg)
     # gzip+base64压缩
     wrap_mqttMsgZip_str = str(gzip_zip(wrap_mqttMsg_str))
+    print("发送云端加密压缩数据: ", wrap_mqttMsgZip_str)
     # 向云端发送采集数据
     socketConfig_local = ConfigParameters().socketConfig_local
     rtnCloudSideMsg = runSocketClinet(socketConfig_local["host"], socketConfig_local["port"],
@@ -83,7 +85,7 @@ def on_exec(msgPayload):
         returnDict["alterFlag"] = "2000"
         runSocketClinet(socketConfig_edgeSide["host"], socketConfig_edgeSide["port"],
                         socketConfig_edgeSide["msgsize"], json.dumps(returnDict))
-        messagebox.showinfo("反馈执行操作", "检测异常，关闭警报")
+        # messagebox.showinfo("反馈执行操作", "检测异常，关闭警报")
     elif rtnCloudSideMsg == "1":
         # launch the air-condition
         messagebox.showinfo("反馈执行操作", "启动制冷装置")

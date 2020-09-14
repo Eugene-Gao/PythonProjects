@@ -72,6 +72,6 @@ class ConfigParameters(object):
     # socketConfig
     thresholdValue_enums = {
         "tempUpThreshold": -10,
-        "tempLowThreshold": -30,
+        "tempLowThreshold": -20,
     }
 
